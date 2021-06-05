@@ -18,7 +18,6 @@ object Constants {
             "Argentina", "Australia",
             "Armenia", "Austria", 1
         )
-
         questionsList.add(que1)
 
         // 2
@@ -28,7 +27,6 @@ object Constants {
             "Angola", "Austria",
             "Australia", "Armenia", 3
         )
-
         questionsList.add(que2)
 
         // 3
@@ -38,7 +36,6 @@ object Constants {
             "Belarus", "Belize",
             "Brunei", "Brazil", 4
         )
-
         questionsList.add(que3)
 
         // 4
@@ -48,7 +45,6 @@ object Constants {
             "Bahamas", "Belgium",
             "Barbados", "Belize", 2
         )
-
         questionsList.add(que4)
 
         // 5
@@ -58,7 +54,6 @@ object Constants {
             "Gabon", "France",
             "Fiji", "Finland", 3
         )
-
         questionsList.add(que5)
 
         // 6
@@ -68,7 +63,6 @@ object Constants {
             "Germany", "Georgia",
             "Greece", "none of these", 1
         )
-
         questionsList.add(que6)
 
         // 7
@@ -78,7 +72,6 @@ object Constants {
             "Dominica", "Egypt",
             "Denmark", "Ethiopia", 3
         )
-
         questionsList.add(que7)
 
         // 8
@@ -88,7 +81,6 @@ object Constants {
             "Ireland", "Iran",
             "Hungary", "India", 4
         )
-
         questionsList.add(que8)
 
         // 9
@@ -98,7 +90,6 @@ object Constants {
             "Australia", "New Zealand",
             "Tuvalu", "United States of America", 2
         )
-
         questionsList.add(que9)
 
         // 10
@@ -108,7 +99,6 @@ object Constants {
             "Kuwait", "Jordan",
             "Sudan", "Palestine", 1
         )
-
         questionsList.add(que10)
         return questionsList
     }
