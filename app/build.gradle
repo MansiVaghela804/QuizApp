@@ -6,7 +6,7 @@ android {
     compileSdkVersion 32
 
     defaultConfig {
-        applicationId "com.quizapp"
+        applicationId "com.mandev.quizapp"
         minSdkVersion 21
         targetSdkVersion 32
         versionCode 1

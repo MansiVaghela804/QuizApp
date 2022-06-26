@@ -1,4 +1,4 @@
-package com.quizapp
+package com.mandev.quizapp
 
 import android.annotation.SuppressLint
 import android.content.Intent

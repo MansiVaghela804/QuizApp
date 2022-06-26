@@ -1,4 +1,4 @@
-package com.quizapp
+package com.mandev.quizapp
 
 object Constants {
     const val USER_NAME: String = "user_name"

@@ -1,4 +1,4 @@
-package com.quizapp
+package com.mandev.quizapp
 
 data class Question(
     val id: Int,
