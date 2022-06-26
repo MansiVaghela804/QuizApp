@@ -1,5 +1,6 @@
 package com.quizapp
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
@@ -79,9 +80,9 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
                     answerView(question.correctAnswer, R.drawable.correct_option_border_bg)
 
                     if (mCurrentPosition == mQuestionsList!!.size) {
-                        btn_submit.text = "FINISH"
+                        btn_submit.text = getString(R.string.finish)
                     } else {
-                        btn_submit.text = "GO TO NEXT QUESTION"
+                        btn_submit.text = getString(R.string.go_to_next_que)
                     }
 
                     mSelectedOptionPosition = 0
@@ -93,20 +94,21 @@ class QuizQuestionsActivity : AppCompatActivity(), View.OnClickListener {
     /**
      * A function for setting the question to UI components.
      */
+    @SuppressLint("SetTextI18n")
     private fun setQuestion() {
         val question =
-            mQuestionsList!!.get(mCurrentPosition - 1) // Getting the question from the list with the help of current position.
+            mQuestionsList!![mCurrentPosition - 1] // Getting the question from the list with the help of current position.
 
         defaultOptionsView()
 
         if (mCurrentPosition == mQuestionsList!!.size) {
-            btn_submit.text = "FINISH"
+            btn_submit.text = getString(R.string.finish)
         } else {
-            btn_submit.text = "SUBMIT"
+            btn_submit.text = getString(R.string.submit)
         }
 
         progressBar.progress = mCurrentPosition
-        tv_progress.text = "$mCurrentPosition" + "/" + progressBar.getMax()
+        tv_progress.text = "$mCurrentPosition" + "/" + progressBar.max
 
         tv_question.text = question.question
         iv_image.setImageResource(question.image)
