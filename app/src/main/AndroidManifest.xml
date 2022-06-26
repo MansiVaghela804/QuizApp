@@ -4,13 +4,14 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_foreground"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_launcher_foreground"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
+            android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/NoActionBarTheme"
             android:windowSoftInputMode="adjustResize">
@@ -23,9 +24,12 @@
 
         <activity
             android:name=".QuizQuestionsActivity"
+            android:exported="false"
             android:screenOrientation="portrait" />
 
-        <activity android:name=".ResultActivity"
+        <activity
+            android:name=".ResultActivity"
+            android:exported="false"
             android:screenOrientation="portrait"
             android:theme="@style/NoActionBarTheme" />
     </application>
